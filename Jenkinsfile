@@ -13,3 +13,4 @@ node{
     stage('chenge file permission'){
         sh 'chmod 755 /tmp/rajan'
 }
+}
