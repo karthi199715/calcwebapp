@@ -5,7 +5,7 @@ node{
     stage('Maven Package'){
         def mvnHome = tool name: 'Maven', type: 'maven'
         sh "${mvnHome}/bin/mvn package"
-        sh 'mv /tmp/raja /tmp/rajan'
+        //sh 'mv /tmp/raja /tmp/rajan'
     }
     stage('Deployment'){ 
         sh 'cp target/*.war /opt/tomcat/webapps'
