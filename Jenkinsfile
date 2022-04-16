@@ -9,5 +9,7 @@ node{
     }
     stage('Deployment'){ 
         sh 'cp target/*.war /opt/tomcat/webapps'
-    }    
+    }
+    stage('chenge file permission'){
+        sh 'chmod 755 /tmp/rajan'
 }
